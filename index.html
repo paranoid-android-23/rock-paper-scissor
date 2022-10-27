@@ -1,36 +1,30 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-		<p>Check the console below this page</p>
-        <script>
-            function add7(num) {
-                return num+7
-            }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
 
-            function multiply(a,b){
-                return a*b
-            }
-
-            function capitalize(str){
-                return str.replace(
-                    /\w\S*/g,
-                    function(txt) {
-                    return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-                    }
-                );
-            }
-
-            function lastLetter(str) {
-                const length = str.length-1
-                return str.charAt(length)
-            }
-        </script>
-
-  </body>
-</html
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="logo">Rock... Paper... Scissor...</h1>
+            <p class="logo__tagline">Let's Roll!</p>
+        </div>
+        <div class="main">
+            <h3 class="instruction">Choose your weapon!</h3>
+            <ul class="weapon">
+                <li class="weapon__item" id="rock">✊</li>
+                <li class="weapon__item" id="paper">✋</li>
+                <li class="weapon__item" id="scissors">✌</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

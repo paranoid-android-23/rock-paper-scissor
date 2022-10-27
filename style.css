@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #50E3C2;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(198.00, 100%, 50%) 0, transparent 55%);
+}
+
+
+.container {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 600px;
+    height: 90vh;
+    width:75%;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.logo {
+    font-size: 32px;
+    padding-bottom: 50px;
+}
+
+.logo__tagline {
+    font-size: 32px;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.instruction {
+    padding: 20px;
+    text-align: center;
+}
+
+.weapon{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap:8px;
+}
+.weapon__item {
+    padding: 20px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+    width:100px;
+    height: 100px;
+    display:grid;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid lightgray;
+    border-radius: 12px;
+    background-color: #17B486;
+}
+
+.weapon__item:hover {
+    background-color: gray;
+}
